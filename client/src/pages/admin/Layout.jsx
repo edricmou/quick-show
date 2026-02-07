@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import AdminNavBar from '../../components/admin/AdminNavBar';
-import AdminSideBar from '../../components/admin/AdminSideBar';
+import AdminNavBar from '../../components/admin/AdminNavBar.jsx';
+import AdminSideBar from '../../components/admin/AdminSideBar.jsx';
 import { Outlet } from 'react-router-dom';
 import { useAppContext } from '../../context/AppContext.jsx';
 import Loading from '../../components/Loading.jsx';

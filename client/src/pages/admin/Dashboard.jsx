@@ -6,10 +6,10 @@ import {
   StarIcon,
   UsersIcon,
 } from 'lucide-react';
-import BlurCricle from '../../components/BlurCricle';
+import BlurCricle from '../../components/BlurCricle.jsx';
 import dateFormat from '../../lib/dateFormat';
-import Loading from '../../components/loading';
-import Title from '../../components/Title';
+import Loading from '../../components/Loading.jsx';
+import Title from '../../components/Title.jsx';
 import http from '../../util/http.js';
 
 const Dashboard = () => {
