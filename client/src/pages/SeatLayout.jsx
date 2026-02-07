@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { assets } from '../assets/assets';
-import Loading from '../components/Loading';
+import Loading from '../components/Loading.jsx';
 import { ArrowRightIcon, Clock } from 'lucide-react';
 import isoTimeFormat from '../lib/isoTimeFormat';
 import BlurCricle from '../components/BlurCricle.jsx';
