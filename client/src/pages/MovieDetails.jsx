@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import BlurCricle from '../components/BlurCricle';
+import BlurCricle from '../components/BlurCricle.jsx';
 import { Heart, PlayCircleIcon, StarIcon } from 'lucide-react';
 import timeFormat from '../lib/timeFormat';
-import DateSeletor from '../components/DateSeletor';
-import MovieCard from '../components/MovieCard';
-import Loading from '../components/loading';
+import DateSeletor from '../components/DateSeletor.jsx';
+import MovieCard from '../components/MovieCard.jsx';
+import Loading from '../components/Loading.jsx';
 import http from '../util/http.js';
 import { useAppContext } from '../context/AppContext.jsx';
 import toast from 'react-hot-toast';

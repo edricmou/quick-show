@@ -1,7 +1,7 @@
 import React from 'react';
 import { dummyShowsData } from '../assets/assets';
-import MovieCard from '../components/MovieCard';
-import BlurCircle from '../components/BlurCricle';
+import MovieCard from '../components/MovieCard.jsx';
+import BlurCircle from '../components/BlurCricle.jsx';
 
 const Favorite = () => {
   return (

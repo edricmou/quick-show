@@ -1,6 +1,6 @@
 import React from 'react';
-import MovieCard from '../components/MovieCard';
-import BlurCircle from '../components/BlurCricle';
+import MovieCard from '../components/MovieCard.jsx';
+import BlurCircle from '../components/BlurCricle.jsx';
 import { useAppContext } from '../context/AppContext.jsx';
 import Loading from '../components/Loading.jsx';
 
