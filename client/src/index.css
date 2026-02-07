@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #F84565;
+    --color-primary-dull: #D63854;
+}
+
+* {
+    font-family: "Outfit", sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: #787777 #1e1e1e;
+}
+
+body {
+    color: white;
+    background-color: #09090b;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden; /* 防止整页左右滑动，仅让内部指定容器横向滚动 */
+}
+
+.no-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+/* 全局隐藏所有数字输入框的上下按钮 - 兼容所有现代浏览器 */
+input[type="number"] {
+    /* Firefox：强制渲染为普通文本框，隐藏上下按钮 */
+    -moz-appearance: textfield;
+    /* 保留原需求的 outline-none 全局生效（可选，若需局部控制可删除） */
+    outline: none;
+}
+
+/* Webkit 内核（Chrome/Safari/Edge）：隐藏上下按钮伪元素 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* 清除默认边距，避免布局偏移 */
+}
+
+/* 控制 <input type="date/ time/ datetime-local"> 等日期 / 时间输入框右侧的「日历选择图标」样式 */
+/* filter: invert(1); 是 CSS 滤镜属性，作用是 将元素的颜色完全反转（黑白互换） */
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
